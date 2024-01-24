@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harita Yönlendirme</title>
+</head>
+<body>
+
+    <script>
+        function redirectToMap() {
+            // Kullanıcının harita uygulamasına yönlendiren bir link oluştur
+            var mapLink = 'geo:36.5627,36.1120';
+            
+            // Yeni bir pencere aç veya mevcut pencerede yönlendir
+            window.open(mapLink, '_blank');
+        }
+    </script>
+
+    <!-- Sayfa yüklendiğinde otomatik olarak haritaya yönlendir -->
+    <body onload="redirectToMap()"></body>
+
+</body>
+</html>
